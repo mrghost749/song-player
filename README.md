@@ -1,32 +1,68 @@
 # song-player
-make a player play a song  
-This project is a simple yet stylish music player built with HTML, CSS, and JavaScript. It allows users to play, pause, and switch between songs effortlessly. The UI is designed with a modern look, making it a great addition to any website or personal project.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #111;
+            color: white;
+        }
+        .player-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #007BFF;
+            color: white;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
 
-✨ Features
-✅ Play, Pause & Stop functionality
-✅ Custom playlist support (Add your own songs)
-✅ Modern and responsive UI
-✅ Volume & Seek controls
-✅ Loop & Shuffle options
+    <h1>🎶 My Music Playlist</h1>
+    
+    <div class="player-container">
+        <h3 id="song-title">AUR - SHIKAYAT</h3>
+        <audio id="audio-player" controls>
+            <source src="AUR - SHIKAYAT - Raffey - Usama - Ahad (Official Music Video)(MP3_160K).mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
 
-🚀 Technologies Used
-🔹 HTML5 for structure
-🔹 CSS3 for styling and animations
-🔹 JavaScript for dynamic functionality
+    <div class="player-container">
+        <h3 id="song-title">Pehla Tere Nain Dekhe</h3>
+        <audio id="audio-player" controls>
+            <source src="pehla tere nain dekhe fer dekhya tenu ni lofi lyrics song(MP3_160K).mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
 
-📌 How to Use
-1️⃣ Add your music files to the project folder
-2️⃣ Update the playlist in script.js
-3️⃣ Open index.html in a browser and enjoy your music!
-
-💡 Future Improvements
-🔹 Add drag-and-drop playlist management
-🔹 Implement a visualizer for a better experience
-🔹 Create a backend for online song streaming
-
-🔗 Live Demo & Repository
-📂 GitHub Repo: [Your Repository Link Here]
-🎧 Live Demo: [Your Demo Link Here]
-
-Feel free to fork, modify, and contribute to enhance this project! 
-
+    <div class="player-container">
+        <h3 id="song-title">Premika Ne Pyar Se - Slowed And Reverb</h3>
+        <audio id="audio-player" controls>
+            <source src="Premika Ne Pyar Se -(Slowed And Reverb) _ Humse Hai Muqabala _ AR Rahman _ SP Balasubramaniam(MP3_160K).mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  
+</body>
+</html>
